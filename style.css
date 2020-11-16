@@ -1,0 +1,106 @@
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background: url(/assets/Background.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  border-radius: 1.5em;
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: #2f302a;
+  padding: 10em 9em;
+}
+
+.profile-pic {
+  display: inline-block;
+  padding: 1em;
+  background: linear-gradient(180deg, #2d3436, #686a5c);
+  background-size: 200% 200%;
+  margin: auto;
+  border-radius: 50%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient {
+  25% {
+    background-position: top right;
+  }
+  50% {
+    background-position: bottom right;
+  }
+  75% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+.profile-pic img {
+  display: block;
+  height: 20em;
+  border-radius: 50%;
+}
+
+.name {
+  color: #614f0a;
+  font-size: 3em;
+  margin: 0.8em 0;
+}
+
+.bio {
+  color: #bfbebb;
+  font-size: 2em;
+}
+
+.sm {
+  display: flex;
+  justify-content: center;
+  margin: 2.5em 0;
+}
+
+.sm a {
+  color: #614f0a;
+  width: 4em;
+  font-size: 2.8em;
+  transition: 0.4s linear;
+}
+
+.sm a:hover {
+  color: #bfbebb;
+}
+
+.contact-btn {
+ 
+}
+
+.contact-btn:hover {
+  background-color: #bfbebb;
+  color: #614f0a;
+}
+
+
+
+
+
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
